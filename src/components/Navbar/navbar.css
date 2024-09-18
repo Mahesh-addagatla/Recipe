@@ -1,0 +1,45 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff6347; /* Tomato color for the navbar */
+    padding: 1rem 2rem;
+  }
+  .navbar-links{
+    display: flex;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  .navbar-header {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+  }
+  
+  
+  .navbar-items li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-items li a:hover {
+    color: #ffdab9; /* Light peach color on hover */
+  }
+  
+  /* Responsive Design for Mobile */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .navbar-items {
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+  }
+  
